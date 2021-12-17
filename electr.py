@@ -7,13 +7,6 @@ class Electr:
 
             self.heights = list(map(int, electr_in_file.readline().split(" ")))
 
-
-    def length_of_one_line(self, n1, n2):
-        length_of_one_line = (self.distance**2 + (self.heights[n1] - self.heights[n2])**2)**(1/2)
-        
-        return length_of_one_line
-
-
     def form_solutions(self):
 
         solutions = [-1 for i in range(len(self.heights) + 1)]
